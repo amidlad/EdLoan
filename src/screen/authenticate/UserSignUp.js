@@ -218,8 +218,8 @@ const UserSignUp = (props) => {
                                 :
                                 <RoundButton buttonText={'SUBMIT'}
                                     onPress={() => {
-                                       // submitUserData();
-                                        props.navigation.navigate(NavConstants.HOME)
+                                        submitUserData();
+                                        //props.navigation.navigate(NavConstants.HOME)
                                     }}
                                 ></RoundButton>
                             }

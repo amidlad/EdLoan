@@ -3,4 +3,5 @@ export default{
     REPORTS: 'REPORTS',
     HOME: 'HOME',
     REPORT: 'REPORT',
+    USER_DETAILS: 'USER_DETAILS',
 }

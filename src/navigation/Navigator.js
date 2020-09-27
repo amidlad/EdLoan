@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import UserSignUp from '../screen/authenticate/UserSignUp';
 import UserListing from '../screen/UserListScreen';
+import UserDetails from '../screen/UserDetails';
 import ReportScreen from '../screen/UserReports';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -29,7 +30,7 @@ export const BottomTabNavigator = () => {
                     }
 
                     let text = <Text allowFontScaling={false} style={{
-                        color: !focused ? Colors.BLACK : 'red',
+                        color: !focused ? Colors.BLACK : 'grey',
                         fontWeight: 'bold',
                     }}>
                         {name}
@@ -56,6 +57,8 @@ export const HomeNavigator = () => {
 
         <HomeStackNavigator.Screen name={NavConstants.HOME}
             component={UserListing} options={defaultOptions} />
+        <HomeStackNavigator.Screen name={NavConstants.USER_DETAILS}
+            component={UserDetails} options={defaultOptions} />
 
     </HomeStackNavigator.Navigator>
 }

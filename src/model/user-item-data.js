@@ -1,4 +1,4 @@
-const { default: User } = require("./User");
+import User from './User';
 
 
 const USERS = [
@@ -21,6 +21,36 @@ const USERS = [
         locality: 'Laos',
         guest: 1,
         address: 'Central Avenue, Laos'
+    }),
+    new User({
+        id: new Date().getTime(),
+        dob: '04/10/1987',
+        userName: 'Ryan Reynolds',
+        age: 42,
+        type: 1,
+        locality: 'Seol',
+        guest: 2,
+        address: 'Grand Avenue, Seol'
+    }),
+    new User({
+        id: new Date().getTime(),
+        dob: '03/01/1989',
+        userName: 'Bruce Banner',
+        age: 23,
+        type: 2,
+        locality: 'New York',
+        guest: 1,
+        address: 'Times Square, New York'
+    }),
+    new User({
+        id: new Date().getTime(),
+        dob: '29/06/1987',
+        userName: 'Dr Strange',
+        age: 23,
+        type: 2,
+        locality: 'Shanghai',
+        guest: 1,
+        address: 'Buddha check, Shanghai'
     })
 
 ]
